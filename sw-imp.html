@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: Songwriting</title>
+
+<script src="js/menu-toggle.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header-sw.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'menu'
+      'main'
+      'right'
+      'footer';
+  }
+
+  .right {
+    display: none;
+  }
+
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main > h1 {
+    font-size: 24px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 14px;
+  }
+
+  .right {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .main > h1 {
+    font-size: 20px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 12px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html">ABBA</a>
+            <a href="avicii-imp.html">Aviici</a>
+            <a href="Euro-imp.html">Eurovision</a>
+            <a href="sw-imp.html" class="active">Songwriting</a>
+          </div>
+        </div> 
+        <a href="uc-v1.html">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music Impacts</h1>
+          <h2 style="font-size:2.5rem;">Songwriting</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <h2>Songwriting</h2>
+    <p>Music’s biggest hits are not coming from the UK or the US, but from Sweden. Stockholm has become a little bit of a “hit factory” (Knowledge at Wharton), with song-writing camps in the country producing <a href=”Euro-imp.html”>Eurovision winners</a>, chart-topping hits, and songs we here on the radio every day.</p>
+    <p>Swede’s speak fantastic English, <a href="https://studyinsweden.se/blogs/2018/03/26/people-in-sweden-speak-excellent-english/">the country was ranked 2nd of 80 countries for their English proficiency</a>. This leading to them creating some of the best songs/most popular songs that we have had heard in the past few decades. Songs like ‘Hit Me Baby, One More Time’ would never be written by an English speaking songwriter, as it sounds too much like an ode to violence (Knowledge at Warton).</p>
+    <p>This success came from Charion Studios, a studio in Stockholm where the songs were created through “track and hook”, by industrialising the process. This means that the songs are written by many people who create different things with the same beat. A producer will then choose the hook they like the most to go forward with. This creates some very repetitive songs, ones that sound similar to each other.</p>
+    <br>
+    <div class="text-box">
+        <p>"Yes, it’s a very mechanized and conglomerated process. And yet at the very heart of it, there is this sort of magical thing, which is a hit. And no one can predict one.”</p>
+        <p> - Knowledge at Wharton</p>
+    </div>
+    <br>
+  <p>You hear these songs everywhere, from Top 40 charts to the supermarket, they are spread across the world now. These songs create a hook that make you remember them, and quickly make you sing along to them. Pop music allows for the Swedes to create multiple songs that become hits, with artists like Taylor Swift, Katy Perry and Justin Timberlake being involved.</p>
+  <p>This well polished technique resonates with listeners, emotional connections are built through lyrics and beats (Bleach, 2019), this creating a domination of the charts. The songwriting phenomenon links all the way back to  <a href=”ABBA-imp.html”>ABBA</a> and their worldwide stardom. Swede’s create a raw connection through music, using relatability to gain listeners.</p>
+  <p>Swedes, and their Nordic neighbours, also run songwriting camps throughout the year to create worldwide hits. Many of the songs written at these camps go on to compete at Eurovision or it’s run up selections. For example, a song written at a Norwegian songwriting camp is representing Ireland at Eurovision this year. Courses like <a href=https://soundslikesweden.se/about-musikmakarna/>Sounds Like Sweden and Musicmakrna</a> are helping Sweden make the songwriters of tomorrow.</p>
+  <hr>
+  <div class="image-container">
+    <img src="images/MaxMartin.jpg" alt="Max Martin" height="250" class="center">
+    <img src="images/sw-svt.png" alt="Melfest Songwriters" height="250" class="center">
+  </div>
+  <div class="caption-box">Max Martin (left) & Joy Deb, Lennea Deb and Andreas Lindbergh (right). Src/Wikipedia, Src/SVT</div>
+  <hr>
+  <p>Songwriters like Max Martin, Thomas G:Son and the Deb siblings are all Swedish songwriters who now have made their international impact. Max Martin being honoured by Taylor Swift during her Era’s Tour performance in Stockholm due to his help writing some of her biggest pop hits. The 54 year old has written 81 number 1 hits, 27 Billboard Hot 100 number 1s and in 2019 his singles sales were over 135 million copies. He has won Songwriter of the Year at the ASCAP Pop music awards 11 times and has been nominated for a Tony award for his work with ‘& Juliet’.</p>
+  <p><a href="https://www.youtube.com/watch?v=tAEfV81BI2E">Check out this documentary on YouTube all about the secrets of Swedish pop!</a> The video is in English but has been uploaded from SVT, the Swedish broadcaster. This website takes no responsibility for outside sources content.</p>
+  <br>
+  <h3>Here is some of the best songs written and produced by Swedish songwriters and producers - Swedish Music Hall of Fame on Spotify </h3>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/13xbPlyzRONUTY1xGhRlUs?utm_source=generator" width="100%" height="250" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>  
+  
+    
+ 
+  
+
+  <div class="right">
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/4OOBEE_24Ww?si=ZP7_bncHmsPsyyWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="caption-box">Max Martin discusses the importance of the opening lines in music. SRC/Muso.ai Youtube</div>
+     <br>
+    <br>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Max Martin's Biggest UK Hits!</h2>
+    <ul class="best-selling-artists">
+      <li>1) Can't Stop the Feeling - Justin Timberlake</li><br>
+      <li>2) Love Me Like You Do - Ellie Goulding</li><br>
+      <li>3) Roar - Katy Perry</li><br>
+      <li>4) Baby One More Time - Britney Spears</li><br>
+      <li>5) Shake it Off - Taylor Swift</li>
+     </ul>
+    
+   </div>
+
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>

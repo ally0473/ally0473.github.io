@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: Eurovision</title>
+
+<script src="js/menu-toggle.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header-euro.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'menu'
+      'main'
+      'right'
+      'footer';
+  }
+
+  .right {
+    display: none;
+  }
+
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main > h1 {
+    font-size: 24px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 14px;
+  }
+
+  .right {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .main > h1 {
+    font-size: 20px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 12px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html">ABBA</a>
+            <a href="avicii-imp.html">Aviici</a>
+            <a href="Euro-imp.html" class="active">Eurovision</a>
+            <a href="sw-imp.html">Songwriting</a>
+          </div>
+        </div> 
+        <a href="uc-v1.html">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music Impacts</h1>
+          <h2 style="font-size:2.5rem;">Eurovision & Melodifestivalen</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <h2>Melodifestivalen</h2>
+    <p>Melodifestivalen, Melfest or Mello, is Sweden’s biggest and most watched TV programme. Melfest is the Swedish selection show for Eurovision, contested almost every year since 1959. Melfest has produced 7 Eurovision winners, created an international phenomenon through ABBA, and produced some of Sweden’s greatest artists. Sweden remain the joint most successful country at Eurovision alongside the Irish, with Loreen’s win in 2023 giving them their 7th win and her 2nd win.</p>
+    <p>Melodifestivalen has been previously known as the Schlager fest due to the nature of the music competing, known locally as schlager music. But, music in Melfest crosses all genres, from rap to pop, opera to rock. Melfest came about as Sveriges Radio (SR) wanted to start a selection program for the new Eurovision Song Contest. </p>
+  
+    <p>In its early days, the winning artist didn’t get to go to Eurovision, with SR deciding that Brita Borg would go to Eurovision no matter the song, this practice stopped after 2 years in 1961. It wasn’t until 1967 that Melodifestivalen was adopted as a name of the competition. Now, the competition takes place across 6 weeks, with 5 heats and a second chance round before the final. This is something which is always changing as producers try to find the best way to present the competition. The final takes place in front of the 27,000 strong crowd in the country’s national football stadium.</p>
+    <p>Melfest has not only produced local stars, but also Eurovision winning icons such as ABBA, Loreen and Carola. Sweden has won Eurovision seven times, with the first coming in 1974 with ’Waterloo’ by ABBA, a song which launched their career internationally. Since then, Sweden has won with 2 songs in Swedish and the others all in English. Eurovision is a great event in Sweden, and to win Melfest and represent the country is something which is taken with privilage for many Swedish artists. However, few artists sing in the Swedish language. 2006 was the last time a Swedish song won Melfest when Carola (winner of Eurovision 1991) sung ’Evighet’, although it was performed in English at Eurovision. The 2025 contest would be the first time Swedish would win Melfest and be performed at Eurovision with KAJ winning the competition with ’Bara Badu Bastu’ since 1998. Although, this is also the first time since the 60s that Swedish will represent Swedish by their own choice. Eurovision used to rule that countries had to sing in their own language, this rule removed in 1998.</p>
+    <br>
+    <div class="slide-img">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/h6x-TKgYM9k?si=4hWf2tgyaOQCSbCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Loreen performing 'Tattoo' at the final of Melodifestivalen 2023 in the Friend's Arena. She went on to win Eurovision in Liverpool, Sweden's 7th win.</p>
+    </div>
+    <hr>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/sli-8.png" style="width:100%">
+          <div class="text">The range of Melfest logos, from the early 2000s to now.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/sli-9.png" style="width:100%">
+          <div class="text">Some Melfest icons, and the trophy itself.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/sli-10.png" style="width:100%">
+          <div class="text">The host venues of Melfest 2025. Sweden hosts the show inside Ice Hockey venues and football stadiums.</div>
+        </div>
+        
+        </div>
+      
+  
+  <div class="dot-container">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+    <hr>
+    <br>
+  <p>Den stora Sångfågeln is the name of the trophy the artists are fighting for, in English ’the Great Songbird’.</p>
+  <p>Melfest may be the most popular show in Sweden, however viewer numbers have faltered across the past decade, falling from over 4 million in 2013 to 3.4 million in 2023 . This is part of the reason why the producers are always trying to evolve the competition to bring it back to its heyday. Melfest’s biggest success however has been creating an engaged international audience. It is the most famous national selection programme, gaining the attention of viewers across Europe and the world throughout it’s 6 week run. SVT (the national broadcaster) celebrate this fact by now offering English commentary during the final since 2021. </p>
+  <p>Melfest, and Eurovision, are institutions in Sweden and truly showcase how important music is for the country. As discussed around <a href="ABBA-imp.html">ABBA</a>, the contest has produced some of the country’s biggest exports and music that has gone worldwide. But most importantly, it is a cultural institution for the country. Sweden loves music, and it loves Melfest. It is more watched than Eurovision itself in Sweden and is huge across the country. Melfest, and Eurovision, are key parts of Swedish music and it’s history, but it is not the full story of the country’s music.</p>
+  <hr>
+  <div class="image-container">
+    <img src="images/kaj.jpg" alt="KAJ with the winning trophy of Melfest 2025" height="250" class="center">
+    <img src="images/mandm.jpeg" alt="2024 Melfest winners Marcus and Martinus" height="250" class="center">
+  </div>
+  <div class="caption-box">The past 2 winners of Melfest - Marcus & Martinus in 2024 and Kaj in 2025</div>
+  <hr>
+  <br>
+  <h3>Listen to the songs of this year's Melodifestivalen here! Kaj won with 'Bara Bada Basta' (Let's Take a Sauna), the first song to represent Sweden in Swedish since 1998   </h3>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5djYVkjSaTD99EMmgmrG47?utm_source=generator&theme=0" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>  
+  
+    
+ 
+  
+
+  <div class="right">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Amount of Melfest Songs that have Top 5 Eurovision Placings</h2>
+    <ul class="best-selling-artists">
+      <li>1st Place - 7 Times</li><br>
+      <li>2nd Place - 1 Time</li><br>
+      <li>3rd Place - 6 Times</li><br>
+      <li>4th Place - 2 Times</li><br>
+      <li>5th Place - 10 Times</li>
+     </ul> 
+     <br>
+    <br>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/h6x-TKgYM9k?si=4hWf2tgyaOQCSbCq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="caption-box">Loreen performing 'Tattoo' at the final of Melodifestivalen 2023 in the Friend's Arena. She went on to win Eurovision in Liverpool, Sweden's 7th win.</div>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>The Past 5 Melfest Winners</h2>
+    <ul class="best-selling-artists">
+      <li>2025 - Kaj - 'Bara Bada Bastu'</li><br>
+      <li>2024 - Marcus & Martinus - 'Unforgettable'</li><br>
+      <li>2023 - Loreen - 'Tattoo'</li><br>
+      <li>2022 - Cornelia Jakobs - 'Hold Me CLoser'</li><br>
+      <li>2021 - Tusse - 'Voices'</li>
+     </ul>
+
+   </div>
+
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>

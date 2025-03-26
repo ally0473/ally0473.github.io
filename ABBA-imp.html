@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: ABBA</title>
+
+<script src="js/menu-toggle.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header-abba.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'menu'
+      'main'
+      'right'
+      'footer';
+  }
+
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main > h1 {
+    font-size: 24px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 14px;
+  }
+
+  .right {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .right {
+  display: none;
+  }
+
+  .main {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .main > h1 {
+    font-size: 20px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 12px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html" class="active">ABBA</a>
+            <a href="avicii-imp.html">Aviici</a>
+            <a href="Euro-imp.html">Eurovision</a>
+            <a href="sw-imp.html">Songwriting</a>
+          </div>
+        </div> 
+        <a href="uc-v1.html">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music Impacts</h1>
+          <h2 style="font-size:2.5rem;">ABBA</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <b><p>ABBA, a band formed in 1972 making their mark on the world until their breakup in 1982. Agnetha Faltskog, Bjorn Ulvaeus, Benny Andersson and Anni-Frid Lyngstad make up the band, each of them with a different musical background.</p></b>
+    <h2>Who?</h2>
+    <p>Agnetha, born in Jonkoping, had a successful career on her own before joining the band ABBA, singing with her local dance band and having a solo career also. At 18 she moved to Stockholm gaining attention for her Schlager music that came from original compositions and covers of foreign music. However, it was her original music that got the most attention, with her selling 4 solo Eps and being successful on the Swedish charts.</p>
+    <p>Bjorn, born in Gothenburg, fronted the Hootenanny Singers, a Swedish folk-skiffle group. Bjorn also had previous experience on being successful. He collaborated with Benny, born in Stockholm and performing with the Hep Stars, as their bands worked together to create some of Sweden’s biggest hits of the time. The Hep Stars went on to be named “The Swedish Beatles”. Benny also wrote a song for Melodifestivalen 1969, the song won the competition however was tied for first place, and re-voting placed it second. Both their bands began to break up in 1969, allowing Bjorn and Benny to work together on their first album ‘Lycka’ in 1970.</p>
+    <p>Anni-Frid, born in Bjorkasen in Norway, sang in multiple different places and bands from age 13. She originally sang in a jazz-orientated cabaret style forming her own band, the Anni-Frid Four. She won the Swedish competition ‘A Day Off’ in 1967, which brough her a recording contract and opportunities to perform on live TV. She had her first number one in 1971, a song written by Benny and featured the other 2 future ABBA members on backing vocals. Anni-Frid performed in Melfest 1969, where she then met her future husband, Benny.</p>
+    <br>
+    <div class="slide-img">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/LFGLR39d7HQ?si=532cp8s4JQB3jTn6&amp;start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>ABBA performing at Melodifestivalen 1973, there is no footage of this.</p>
+    </div>
+    <hr>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/sli-5.png" style="width:100%">
+          <div class="text">A range of covers from ABBA Albums </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/sli-6.png" style="width:100%">
+          <div class="text">Posters from ABBA Tour's and their movie release, all the way to Voyage.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/sli-7.png" style="width:100%">
+          <div class="text">Some other ABBA Ventures, like the museum, musicals and movies.</div>
+        </div>
+        
+        </div>
+      
+  
+  <div class="dot-container">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+    <hr>
+    <br>
+<h2>Their Career</h2>
+  <p>After the first album written by Bjorn and Benny, the quartet began to record singles together and in 1971 began touring Swedish folk parks on a regular basis. Stig Andersson’s Polar Music record label, now more known for being ABBA’s label, wanted to make an international break, Andersson persuading Bjorn and Benny to record a song for Melfest. Their 1972 entry “Say it with a Song” came third and led them to enter on their own.</p>
+  <p>A break was made in 1972 in Japan, when ‘She’s My Kind of Girl’ made the Japanese top 10. But it wasn’t until their singly “People Need Love” that they were credited as Bjorn & Benny, Agnetha & Anni-Frid.</p>
+  <p>In 1973, Stig Anderson wanted the band to go once more to Melodifestivalen, with the song “Ring Ring” sung in Swedish. They finished 3rd in Melfest that year, however the song title would become the title of the band’s debut album. ‘Ring Ring’ went on to be a success across Europe and South Africa and led to the band officially being named as ABBA.</p>
+  <p>In 1974, the band re-entered Melfest, with the song ‘Waterloo’. Not only did they win Melfest, but they went on to win Eurovision, translating the song to English and as a result they charted across Europe, including the UK. The song even made it stateside, going to number 6 on the Billboard charts.</p>
+  <p>After Eurovision, ABBA had made their big break. They started by going on tour across Scandinavia and Europe although not to instant success. Eventually through songs like ‘Mamma Mia’ and ‘I Do, I Do, I Do, I Do, I Do,’ they found their chance to reach worldwide stardom. Their first large-scale tour took place in January 1977, where they travelled across Europe and Australia. This was before Australia even watched Eurovision!</p>
+  <p><i><a href="https://abbasite.com/articles/abba-on-stage/">If you want to know more about the different tour’s that ABBA went on, check out their official site here where it goes through all of their tours and what happened on them! </a></i></p>
+  <hr>
+  <div class="image-container">
+    <img src="images/abba-1.jpg" alt="The ABBA Women" height="300" class="center">
+    <img src="images/abba-3.jpg" alt="ABBA" height="300" class="center">
+  </div>
+  <div class="caption-box">ABBA seen here on tour, and promoting their music in Ole Sandstrom outfits</div>
+  <hr>
+  <p>ABBA had reached international stardom, with America linking everything Swedish to ABBA (Johansson, 2010). The whole world was encapsulated by ABBA with albums and tours becoming successful across the globe. This all sadly came to an end in 1982 when they announced an indefinite break.</p>
+  <p>That though is not the end of the ABBA story, although the release no new music, and had no public appearances until 2016 together, the band’s impact was still widespread. In 1992, ABBA Gold: Greatest Hits was released, now one of the best-selling albums worldwide and the second-highest-selling album in the UK alone.</p>
+  <p>In 2005, their Eurovision winning song ‘Waterloo’ was voted as the best song in the competition entry. In 2008, for only the second time since 1986 the band reunited for the premiere of Mamma Mia! The Movie, once more surging the popularity of ABBA.</p>
+  <p>The band reunited in 2016 for Mamma Mia! The Party, announcing at the same time the creation of a digital entertainment experience. This would become ABBA Voyage, staged in London and opening in a special arena in 2021. This came after the band recorded 2 new songs in 2018, and the album Voyage was released as a final goodbye from the band. In the final of the 2024 Eurovision Song Contest in Malmo, 50 years from their victory, a snippet from Voyage was shown on TV.</p>
+  <hr>
+  <div class="image-container">
+    <img src="images/mamma-mia.jpg" alt="The cast of Mamma Mia, the movie" height="300" class="center">
+    <img src="images/voyage.jpg" alt="The poster for ABBA Voyage in London" height="300" class="center">
+  </div>
+  <div class="caption-box">The case of Mamma Mia! The Movie on the left, and the poster for ABBA Voyage in London on the right.</div>
+  <hr>
+  <br>
+  <h2>Impact and Legacy</h2>
+  <p>As it is clear to see, ABBA have left a huge mark on the Swedish, and international, music industries. ABBA paved the way for wild rock bands like Europe who’s single ‘The Final Countdown’ gave a huge breakthrough for them. Roxette was next to make a breakthrough into the UK with nineteen top-40 hits. Ace of Base another rock band who used ABBA’s path to make international success. In the words of Johansson (2010), occupying the top spot of the US charts became Sweden’s national sport.</p>
+  <p><a href="uc-v1.html">Songwriters became the next big thing for Sweden</a> as moving into the 2000s showed off their powess. Britney Spears, Kelly Clarkson, N’Sync and so many more had their chance to work with songwriting giants. Names like Max Martin are now famed in the music industry for their great successes in the music industry over the past many years. ‘Oops I Did it Again’, one of the songs that have come out of the great country of Sweden.</p>
+  <div class="slide-img">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/shS-jtFOuHw?si=aBE9FxWYOQiXyczM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>The trailer for Mamma Mia! Here We Go Again!</p>
+  </div>
+  <p>The ‘Swedish Music Miracle’ started around 1990 until around 2003 with Sweden becoming the third biggest music exporter after the UK and States (Johansson, 2010). ABBA’s music placed Sweden to become a musical powerhouse. Their unique style placed them outside of the usual Anglosphere, placing emphasis on bass and drums to bring their music to life.</p>
+  <p>ABBA brought this miracle to life, their music still captivating the world. Whether that’s on the west end stage or on the big screen through ‘Mamma Mia!’, or their new stage show Voyage. ABBA is seeing a resurgence of popularity in younger generations, driven through things like Mamma Mia!</p>
+  </div>  
+  
+    
+ 
+  
+
+  <div class="right">
+    <br>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h2>The Top 5 Best-Selling ABBA Singles</h2>
+    <ul class="best-selling-artists">
+      <li>1) Dancing Queen (1976)</li><br>
+      <li>2) Super Trouper (1980)</li><br>
+      <li>3) Knowing Me Knowing You (1977)</li><br>
+      <li>4) Take a Chance On Me (1978)</li><br>
+      <li>5) Fernando (1976)</li>
+     </ul> 
+     <br>
+    <br>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/LFGLR39d7HQ?si=532cp8s4JQB3jTn6&amp;start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <img src="images/abba-melfest.jpg" alt="ABBA in Melodifestivalen 1973" height="200">
+    <div class="caption-box">ABBA performing in Melodifestivalen 1973, there is no video footage of this.</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>Tours of ABBA</h2>
+  <ul class="best-selling-artists">
+    <li>Swedish Folkpark Tour (1973)</li><br>
+    <li>European Tour (1974-1975)</li><br>
+    <li>European & Australian Tour (1977)</li><br>
+    <li>ABBA: The Tour (1979-1980)</li><br>
+    <li>ABBA Voyage (2022-20?)</li>
+   </ul> 
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br> <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <iframe width="350" height="200" src="https://www.youtube.com/embed/shS-jtFOuHw?si=aBE9FxWYOQiXyczM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+   </div>
+
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>

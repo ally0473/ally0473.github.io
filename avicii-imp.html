@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: Avicii</title>
+
+<script src="js/menu-toggle.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header-av.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      'header'
+      'menu'
+      'main'
+      'right'
+      'footer';
+  }
+
+  .right {
+    display: none;
+  }
+
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .main > h1 {
+    font-size: 24px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 14px;
+  }
+
+  .right {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main, .right, .f {
+    grid-area: auto / span 6;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .main > h1 {
+    font-size: 20px;
+  }
+
+  .main > p, .right > h2, .right li {
+    font-size: 12px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 768px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html">ABBA</a>
+            <a href="avicii-imp.html" class="active">Aviici</a>
+            <a href="Euro-imp.html">Eurovision</a>
+            <a href="sw-imp.html">Songwriting</a>
+          </div>
+        </div> 
+        <a href="uc-v1.html">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music Impacts</h1>
+          <h2 style="font-size:2.5rem;">Avicii</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <h2>Avicii</h2>
+    <p><b>Tim Bergling, better known as the DJ Avicii, is one of Sweden’s biggest exports musically. From his debut album ‘True’ to his death in 2018, he was one of the biggest names in European music.</b></p>
+    <p>Born in Stockholm in 1989 he followed in his brother’s footsteps to begin making music at the age of 16, signing with his first label in 2007. Throughout 2009 and 2010, he gained attention as a producer releasing remixes like ‘Sound of Now’, ‘Muja’ and ‘Even’. It was around this time he took the name Avicii – a respelling of the lowest level of Buddhist hell Avicii. </p>
+    <p>Avicii’s first big break across Europe came with the song ‘Seek Bromance’ which made the Top 20 in the UK, Belgium, Sweden, France and the Netherlands. His next big break came with some controversy, when Leona Lewis sampled one of his songs for her release ‘Collide’. This was resolved with the song being released as a joint venture.</p>
+    <br>
+    <hr>
+  <div class="image-container">
+    <img src="images/avicii.jpeg" alt="Avicci" height="250" class="center">
+    <img src="images/true.jpg" alt="Avicii's True album" height="250" class="center">
+    <img src="images/avicii-alb.png" alt="Avicii's stories album" height="250" class="center">
+  </div>
+  <div class="caption-box">Avicii - Src/Spotify. True - Src/Wiki. Tim - Src/Wiki</div>
+  <hr>
+    <br>
+  <p>2011 brought more success for Avicii, with collaborations beginning with David Guetta, Madonna, Lenny Kravitz amongst others. His music was released through social media and streaming platforms, spreading his music worldwide. He performed at Lollapalooza in Chicago in 2012, one of the biggest festivals in the western world.</p>
+  <p>His debut album came out in 2013, headlined by ‘Wake Me Up’, the song which has likely come to be his most famous. Along with <a href=”ABBA-imp.html”>ABBA</a> members Bjorn and Benny, he composed the anthem for <a href=”Euro-imp.html”>Eurovision</a> in 2013. ‘Wake Me Up’ topped the charts across the world, topping the Spotify Global Charts and becoming the fastest selling single of 2013 in the UK. In 2014, ‘Wake Me Up’ became the first song on Spotify to surpass 200 million listeners, overtaken by an Ed Sheeran single in 2015.</p>
+  <p>To top off his success in 2014, Avicii produced the single for the 2014 World Cup and collaborated and produced with British band Coldplay.</p>
+  <p>‘Stories’ was his second album in 2015 and in 2016 he announced his retirement from touring. ‘Stories’ was a collection of songs from a variety of collaboration, Avicii saying before that he had worked on 70 songs in the run up this this album. He released 2 more albums, ‘Avicii (01)’ and ‘Tim’ which was released after his death in 2018. It is reported that he had 200 unreleased songs upon his death.</p>
+  <hr>
+  <div class="image-container">
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/UGVrDyP5tcI?si=tvCGIe71bh5_cuH1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="caption-box">ABC News discussing the last days of Avicii and his lasting legacy since.</div>
+  <hr>
+  <br>
+  <h3>Struggles and Death</h3>
+  <p>Throughout his life it was clear to see that Tim Bergling, Avicii, struggle with his physical and mental health.<a href=”https://dj.dancecult.net/index.php/dancecult/article/download/1191/1009?inline=1”>He cancelled performances in 2013 due to alcohol induced pancreatitis</a>, this one of the different struggles he went through and led to his untimely death in 2018. Bergling was worried to upset fans, fearful to cancel concerts even when his health wasn’t in a good place.</p>
+  <p>His management refused to label his problems as mental health struggles, eventually stopping alcohol being offered to him at events. Saying this, they did attempt to stage interventions against his addiction through both attempts failed. He took up meditation to try and reduce his anxiety and saw therapists to help manage his conditions.</p>
+  <p>He was found dead in 2018 in Oman while on holiday. A friend had expressed concern to his dad the day before his death surrounding his mental health, he committed suicide. His funeral was held in Stockholm and his burial took place in the Sodermalm area of the city. A public memorial was held for him, featuring an orchestra and choir singing some of his hits.</p>
+  <br>
+  <h3>Listen to some of Avicci's biggest hits here</h3>
+  <div class="iframe-container"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcXBWjiVEM8R?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+  <hr>
+  <h3>Legacy</h3>
+  <p>His death has left a long-lasting legacy on the music industry and Sweden as a country. A year from his death, his family created the <a href=https://www.timberglingfoundation.org/>Tim Bergling Foundation</a> as a place to continue his philanthropic ventures and support mental health awareness. Avicii had supported Radiohjalpen, RED and other charities throughout his career, with the foundation supporting these endeavours. </p>
+  <p>The foundation aims to make children and young people feel good, safe and confident and reach their full potential. Suicide is a global crisis, and the foundation aims to remove the stigma around talking about your mental health.</p>
+  <p>Avicii’s music has also left a strong legacy on the world music scene, with artists seeking inspiration from his music. Avicii pioneered a bridge between electronic, country, and pop music, with Avicii himself bridging the gap between club concerts and arena events.</p>
+  <p>Since his death, there has been a museum created to honour Avicii in Stockholm, opened in 2021 by Prince Carl Philip and Princess Sofia. The centre is in the city centre of Stockholm and gives fans a place to commemorate the artist as well as learn more about his history. Furthermore, it gives a chance for visitors to raise awareness of mental health.</p>
+  <p>Also in Stockholm, the Globe Arena (Globen) has been renamed Avicii Arena in his honour. The 16,000 seat arena was renamed in 2021 with 14 year old Ella Tiritiello singing ‘For a Better Day’ on top of the arena with the Stockholm Philharmonic Orchestra to honour him. Ella took part in <a href=”Euro-imp.html”>Melodifestivalen 2025</a>.</p>
+  </div>  
+
+  
+    
+ 
+  
+
+  <div class="right">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Avicii's Top Listened Songs on Spotify</h2>
+    <ul class="best-selling-artists">
+      <li>1) Wake Me Up - 2.7bn</li><br>
+      <li>2) The Nights - 2bn</li><br>
+      <li>3) Waiting for Love - 1.5bn</li><br>
+      <li>4) Without You - 1.2bn</li><br>
+      <li>5) Hey Brother - 1.1bn</li>
+     </ul> 
+     <br>
+    <br>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Favicii%2Fvideos%2F465143984785497%2F&show_text=false&width=380&t=0" width="380" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <div class="caption-box">Ella Tiritiello singing 'For a Better Day' by Avicii on top of the newly named Avicii Arena in Stockholm in 2021.</div>
+    <br> <br> <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/gd-uAAK4gMo?si=yAI1RDlH016JiYRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="caption-box">Avicii's dad, Klas, discusses the Tim Bergling Foundation and the impact it is having. Viewer discretion is advised.</div>
+   </div>
+
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>
