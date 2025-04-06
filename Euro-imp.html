@@ -155,6 +155,10 @@ body {
   .slide-img {
     display: none;
   }
+
+  .accordion {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -193,7 +197,7 @@ body {
 </head>
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
+        <a href="hp-v2.html">Home</a>
         <a href="his-v2.html">Modern History</a>
         <div class="dropdown">
           <button class="dropbtn">Impacts
@@ -206,7 +210,7 @@ body {
             <a href="sw-imp.html">Songwriting</a>
           </div>
         </div> 
-        <a href="uc-v1.html">References</a>
+        <a href="references.html">References</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
       </div>
@@ -225,7 +229,17 @@ body {
     <h2>Melodifestivalen</h2>
     <p>Melodifestivalen, Melfest or Mello, is Sweden’s biggest and most watched TV programme. Melfest is the Swedish selection show for Eurovision, contested almost every year since 1959. Melfest has produced 7 Eurovision winners, created an international phenomenon through ABBA, and produced some of Sweden’s greatest artists. Sweden remain the joint most successful country at Eurovision alongside the Irish, with Loreen’s win in 2023 giving them their 7th win and her 2nd win.</p>
     <p>Melodifestivalen has been previously known as the Schlager fest due to the nature of the music competing, known locally as schlager music. But, music in Melfest crosses all genres, from rap to pop, opera to rock. Melfest came about as Sveriges Radio (SR) wanted to start a selection program for the new Eurovision Song Contest. </p>
-  
+    <button class="accordion">Amount of Melfest Songs that have Top 5 Eurovision Placings</button>
+    <div class="panel">
+      <ul class="best-selling-artists">
+        <li>1st Place - 7 Times</li><br>
+        <li>2nd Place - 1 Time</li><br>
+        <li>3rd Place - 6 Times</li><br>
+        <li>4th Place - 2 Times</li><br>
+        <li>5th Place - 10 Times</li>
+       </ul> 
+    </div>
+    <br>
     <p>In its early days, the winning artist didn’t get to go to Eurovision, with SR deciding that Brita Borg would go to Eurovision no matter the song, this practice stopped after 2 years in 1961. It wasn’t until 1967 that Melodifestivalen was adopted as a name of the competition. Now, the competition takes place across 6 weeks, with 5 heats and a second chance round before the final. This is something which is always changing as producers try to find the best way to present the competition. The final takes place in front of the 27,000 strong crowd in the country’s national football stadium.</p>
     <p>Melfest has not only produced local stars, but also Eurovision winning icons such as ABBA, Loreen and Carola. Sweden has won Eurovision seven times, with the first coming in 1974 with ’Waterloo’ by ABBA, a song which launched their career internationally. Since then, Sweden has won with 2 songs in Swedish and the others all in English. Eurovision is a great event in Sweden, and to win Melfest and represent the country is something which is taken with privilage for many Swedish artists. However, few artists sing in the Swedish language. 2006 was the last time a Swedish song won Melfest when Carola (winner of Eurovision 1991) sung ’Evighet’, although it was performed in English at Eurovision. The 2025 contest would be the first time Swedish would win Melfest and be performed at Eurovision with KAJ winning the competition with ’Bara Badu Bastu’ since 1998. Although, this is also the first time since the 60s that Swedish will represent Swedish by their own choice. Eurovision used to rule that countries had to sing in their own language, this rule removed in 1998.</p>
     <br>
@@ -350,6 +364,7 @@ body {
 	<p>Student Number: 2644602c <br>
 	Submitted in fulfilment of MAD(B)</p>
   <br>
+  <a href="Euro-imp.html" class="top">BACK TO TOP</a>
   
   <!-- add in some navigation here -->
   <br>
@@ -384,6 +399,21 @@ function showSlides() {
       x.className = "topnav";
     }
   }
+
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
     </script>
 </body>
 </html>

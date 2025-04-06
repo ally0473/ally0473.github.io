@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: Home</title>
+
+<script src="js/menu-toggle.js" src="js/top-scroll.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/top-scroll.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+  
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  border: 2px solid #006AA7;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {grid-area: 2 / span 6;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (max-width: 600px) {
+  .main {grid-area: 3 / span 6;}
+  .right {grid-area: 4 / span 6;}
+  .f {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 767px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+.text-box {
+  border: 2px solid #FFD100; /* Yellow border */
+  padding: 20px; 
+  margin: 20px 0;
+  background-color: #006AA7; /* Blue background */
+  border-radius: 10px; 
+  color: white;
+  font-size: 18px; 
+  font-weight: bold; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media screen and (max-width: 600px) {
+  .text-box {
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text-box {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px; 
+  }
+}
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html" class="active">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html">ABBA</a>
+            <a href="avicii-imp.html">Aviici</a>
+            <a href="Euro-imp.html">Eurovision</a>
+            <a href="sw-imp.html">Songwriting</a>
+          </div>
+        </div> 
+        <a href="references.html">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music</h1>
+          <h2 style="font-size:2.5rem;">It's History and Impacts</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <div class="text-box">
+    <h1>Swedish Music: It's Impacts and History, your one-stop shop for everything Swedish Music!</h1>
+  
+  </div> 
+    <h2>Introduction</h2>
+    <p><i>Swedish Music: It’s History and Impacts</i> will explore the world of Swedish music, discussing the modern history after the 2nd world war, and the impacts in which the country has had worldwide through it’s music. Sweden’s pop and schlager revolution in the 1970s took Swedish music worldwide, spearheaded by Agnetha, Bjorn, Benny and Anni-Frid. Also known as ABBA. </p>
+    <p>Sweden has since become the joint most successful country at Eurovision with Ireland. Not only is their success limited at a European level however, Swedish songs and songwriters make it worldwide. From ABBA going on worldwide tours, Aviici taking the club to the stadium, to song writers like Max Martin writing some of the most successful music of this century.</p>
+    <p>Combining research from Johannson and Bjornberg, the site will explore Swedish music through their eyes and from research by others. Swedish music is a topic that has limited research around it, and this website will combine it into one place for it's history and impacts. Through the eyes of these writers and personal reflections from other sources, the <a href="history.html">Modern History</a> section of the site will give a quick history starting in the 1960s all the way to the present day. Each of the impacts pages will detail the impacts of <a href="uc-v1.html">ABBA</a>, <a href="uc-v1.html">Aviici</a>, <a href="uc-v1.html">Eurovision & Melodifestivalen</a>, and <a href="uc-v1.html">songwriting</a> on both Sweden and the world.</p>
+    <br>
+    <div class="slide-img">
+      <iframe width="300" height="200" src="https://www.youtube.com/embed/QIvtyzCYJDg?si=3YfyH_EO9HfOcadx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Winners of Melfest 2025 - KAJ</p>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/sli-1.png" style="width:100%">
+          <div class="text">Some of 2025's Melfest artists. Src/SVT </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/sli-2.png" style="width:100%">
+          <div class="text">Sweden's winners of Eurovision. Src/EBU</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/sli-3.png" style="width:100%">
+          <div class="text">Renders of Melfest stages from 2024-2019. Src/SVT</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/sli-4.png" style="width:100%">
+          <div class="text">Some Swedish music events.</div>
+        </div>
+        
+        </div>
+        <br>
+  
+  <div class="dot-container">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+    <br>
+  <p><b>Did you know that Sweden are the joint most successful country at Eurovision with Ireland?</b> That's right, after Loreen's second victory in Liverpool, the country now has 7 victories! Loreen herself is only the second person to win the contest twice, after Johnny Logan in the 1980s, and the first woman to achieve this feat. </p>
+  <p>Sweden has become something of a Eurovision powerhouse, with their national selection Melodifestivalen being the most watched show in Sweden each year. Not only this, but the show has a significant international audience also, with English commentary being provided for the final since 2021.</p>
+  <p><i>You can read more about <a href="uc-v1.html">Melfest and Eurovision here</a> or check out the official <a href="https://mellopedia.svt.se/index.php/Mellopedia2">Mellopedia here</a> for all the facts and figures.</i></p>
+  </div>  
+  
+    
+ 
+  
+
+  <div class="right">
+    <h2>The Swedish Eurovision Winners:</h2>
+    <br>
+    <p>1974 - 'Waterloo' - ABBA</p>
+    <br>
+    <p>1984 - 'Diggi-Loo Diggi-Ley' - The Herreys</p>
+    <br>
+    <p>1991 - 'Fangad av en Stormvind' - Carola</p>
+    <br>
+    <p>1999 - 'Take Me to Your Heaven' - Charlotten Neilsen</p>
+    <br>
+    <p>2012 - 'Euphoria' - Loreen</p>
+    <br>
+    <p>2015 - 'Heroes' Mans Zermerlow</p>
+    <br>
+    <p>2023 - 'Tattoo' - Loreen</p>
+	<br>
+    <img src="images/loreen.jpg" alt="Loreen with the Eurovision trophy in 2023" height="300">
+    <p>Src/Corrine Cumming - EBU</p>
+  </div>
+
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  <a href="hp-v2.html" class="top">BACK TO TOP</a>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the modern history of Swedish music from the 1960s to today.">
+  <title>Modern History of Swedish Music</title>
+
+  <!-- External Stylesheets and JS -->
+  <script src="js/menu-toggle.js"></script>
+  <link rel="stylesheet" href="css/css-1.css">  
+  <link rel="stylesheet" href="css/timeline.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header-mh.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <style>
+    /* Global Reset and Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lucida Sans', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Layout Styling */
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main main right'
+        'footer footer footer footer footer footer';
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-container > div {
+      padding: 20px;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Hero Section */
+    .hero-image {
+      background-image: url('images/music-hero.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+    }
+
+    /* Main Section Styling */
+    .main h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .main p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .timeline {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      color: #006aa7;
+    }
+
+    .content h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .timeline-img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    /* Right Section for Best-Selling Artists */
+    .right {
+      grid-area: right;
+      background-color: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .best-selling-artists {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .best-selling-artists li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Footer Section */
+    .f {
+      grid-area: footer;
+      background-color: #006aa7;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Mobile and Tablet Responsiveness */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-areas:
+          'header'
+          'menu'
+          'main'
+          'right'
+          'footer';
+      }
+
+      .main h2 {
+        font-size: 2rem;
+      }
+
+      .timeline-img {
+        width: 100%;
+      }
+
+      .right {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="hp-v1.html">Home</a>
+    <a href="history.html" class="active">Modern History</a>
+    <div class="dropdown">
+      <button class="dropbtn">Impacts <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="uc-v1.html">ABBA</a>
+        <a href="uc-v1.html">Aviici</a>
+        <a href="uc-v1.html">Eurovision</a>
+        <a href="uc-v1.html">Songwriting</a>
+      </div>
+    </div> 
+    <a href="uc-v1.html">References</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Swedish Music</h1>
+      <h2>Modern History</h2>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <!-- Main Content Section -->
+    <div class="main">
+      <h2>Modern History of Swedish Music</h2>
+      <p>Sweden's musical history is rich and diverse, with contributions from major artists like ABBA, Roxette, and Avicii. This section delves into Sweden's journey from the 1960s to the present day, showcasing how pop, rock, and folk music have shaped the nation's musical identity.</p>
+      <p>This timeline highlights key events, artists, and moments in Swedish music history that have made a global impact.</p>
+      
+      <div class="timeline">
+        <!-- Timeline Entries -->
+        <div class="container">
+          <div class="content">
+            <h2>1959</h2>
+            <h3>The Beginnings of Melodifestivalen</h3>
+            <p>After Sweden's Eurovision debut in 1958, SVT established the Eurovision selection as part of their show 'Säg det med musik'. This eventually evolved into Melodifestivalen in 1967.</p>
+          </div>
+        </div>
+
+        <!-- Additional timeline entries go here (same format as above) -->
+
+        <div class="container">
+          <div class="content">
+            <h2>2020</h2>
+            <h3>Sweden Takes Eurovision Worldwide through Netflix</h3>
+            <p>The film "Eurovision Song Contest: The Story of Fire Saga" was released on Netflix in 2020, helping to introduce the iconic event to a global audience, even amid the COVID-19 pandemic. The song "Husavik" became a viral sensation.</p>
+            <iframe width="400" height="350" src="https://www.youtube.com/embed/qjuphuG3ndw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="timeline-img"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Sidebar for Best-Selling Artists -->
+    <div class="right">
+      <h2>Top 5 Best-Selling Swedish Artists</h2>
+      <ul class="best-selling-artists">
+        <li>ABBA - 500+ Million Sales</li>
+        <li>Roxette - 75+ Million Sales</li>
+        <li>Ace of Base - 50+ Million Sales</li>
+        <li>Zara Larsson - 35+ Million Sales</li>
+        <li>Avicii - 30+ Million Sales</li>
+      </ul>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/pv6_UMum0gA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="f">
+      <hr>
+      <p>Student Number: 2644602c <br> Submitted in fulfilment of MAD(B)</p>
+      <br>
+      <button class="button button1"><a href="hp-v1.html">Home</a></button>
+      <button class="button button1"><a href="uc-v1.html">Modern History</a></button>
+      <button class="button button1"><a href="uc-v1.html">References</a></button>
+    </div>
+
+  </div>
+
+  <!-- Menu Toggle JS -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+</html>

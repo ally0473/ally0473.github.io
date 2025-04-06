@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swedish Music: Home</title>
+
+<script src="js/menu-toggle.js" src="js/top-scroll.js"></script>
+<link rel="stylesheet" href="css/css-1.css">
+<link rel="stylesheet" href="css/header.css">	
+<link rel="stylesheet" href="css/slideshow.css">	
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/top-scroll.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+  
+.main {
+  grid-area: main;
+  margin: 40px;
+}
+
+.main > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.main > p {
+  margin-bottom: 7px;
+}
+
+.right {
+  grid-area: right;
+  border: 2px solid #006AA7;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+  text-align: center;
+  margin: 20px;
+}
+
+.right > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.right li {
+  padding: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.f {
+  grid-area: footer;
+  background-color: #006AA7;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .main {grid-area: 2 / span 6;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (max-width: 600px) {
+  .main {grid-area: 3 / span 6;}
+  .right {grid-area: 4 / span 6;}
+  .f {grid-area: 5 / span 6;}
+}
+
+@media only screen and (min-width: 600px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 3 / span 6;}
+  .f {grid-area: 4 / span 6;}
+}
+
+@media only screen and (min-width: 767px) {
+  .main {grid-area: 2 / span 4;}
+  .right {grid-area: 2 / span 1;}
+  .f {grid-area: 3 / span 6;}
+}
+
+.slide-img {
+  background-color: #006AA7;
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 800px) {
+  .slide-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+  .slide-img img {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .main, .r {
+    padding: 15px;
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main, .r {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main, .r {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .r {
+    display: none;
+  }
+}
+
+table, th, td {
+  border:1px solid black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  table, th, td {
+    font-size: 14px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="hp-v2.html">Home</a>
+        <a href="his-v2.html">Modern History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Impacts
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ABBA-imp.html">ABBA</a>
+            <a href="avicii-imp.html">Aviici</a>
+            <a href="Euro-imp.html">Eurovision</a>
+            <a href="sw-imp.html">Songwriting</a>
+          </div>
+        </div> 
+        <a href="references.html" class="active">References</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
+      </div>
+    <!-- Landing page image here-->
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size: 4rem;">Swedish Music</h1>
+          <h2 style="font-size:2.5rem;">References</h2>
+          
+        </div>
+      </div>
+
+<div class="grid-container">
+
+  <div class="main">
+    <h2>Images</h2><br>
+    <div style="overflow-x:auto;">
+      <table style="width:100%">
+        <tr>
+          <th>Image</th>
+          <th>Source</th>
+          <th>Page</th>
+        </tr>
+        <tr>
+          <td>Loreen with the Eurovision Trophy</td>
+          <td><a href="https://eurovision.tv/story/swedens-loreen-wins-eurovision-song-contest-2023">Corinne Cumming/EBU</a></td>
+          <td><a href="hp-v2.html">Home Page</a></td>
+        </tr>
+        <tr>
+          <td>The acts of Melfest 2025</td>
+          <td>Accessed through the SVT Media bank, not for public access though for public use (gained throughout outside work)</td>
+          <td><a href="hp-v2.html">Home Page</a></td>
+        </tr>
+        <tr>
+          <td>Swedish Eurovision winners</td>
+          <td>EBU</td>
+          <td><a href="hp-v2.html">Home Page</a></td>
+        </tr>
+        <tr>
+          <td>Renders of Melfest stages</td>
+          <td>SVT</td>
+          <td><a href="hp-v2.html">Home Page</a></td>
+        </tr>
+        <tr>
+          <td>Jonas Akersund</td>
+          <td><a href="https://www.wallofcelebrities.com/celebrity/jonas-akerlund/pictures/jonas-akerlund_1712340.html">AFP_Getty Images</a></td>
+          <td><a href="his-v2.html">Modern History</a></td>
+        </tr>
+        <tr>
+          <td>ABBA Singing Waterloo</td>
+          <td><a href="https://www.bbc.co.uk/news/entertainment-arts-56743279">Getty Images - On BBC News</a></td>
+          <td><a href="his-v2.html">Modern History</a></td>
+        </tr>
+        <tr>
+          <td>Spotify Logo</td>
+          <td><a href="https://newsroom.spotify.com/2023-01-23/an-update-on-january-2023-organizational-changes/">Spotify</a></td>
+          <td><a href="his-v2.html">Modern History</a></td>
+        </tr>
+        <tr>
+          <td>Spotify Logo</td>
+          <td><a href="https://www.reddit.com/r/1970s/comments/lma8pv/abba_in_australia_1977/?rdt=40447">Reddit</a></td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td>
+        </tr>
+        <tr>
+          <td>ABBA</td>
+          <td><a href="https://uk.pinterest.com/pin/493988652849615869/">Bravo Magazine/Pinterest</a></td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Cast of Mamma Mia!</td>
+          <td><a href="https://www.bbc.co.uk/news/entertainment-arts-39987268">Getty Images/BBC</a></td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td>
+        </tr>
+        <tr>
+          <td>All Album covers seen</td>
+          <td><a href="https://abbasite.com/discography/">ABBA Official site</a></td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td
+        </tr>
+        <tr>
+          <td>All tour posters seen</td>
+          <td><a href="https://shop.abbathemuseum.com/collections/posters">ABBA The Museum</a></td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td>
+        </tr>
+        <tr>
+          <td>In relation to the movies</td>
+          <td>Accessed through IMDB</td>
+          <td><a href="ABBA-imp.html">ABBA Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Tim Bergling</td>
+          <td><a href="https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6">Spotify</a></td>
+          <td><a href="avicii-imp.html">Avicii Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Avicii albums</td>
+          <td><a href="https://shop.avicii.com/collections/music">Avicii Offical Site</a></td>
+          <td><a href="avicii-imp.html">Avicii Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Melodifestivalen logos</td>
+          <td>SVT</td>
+          <td><a href="Euro-imp.html">Eurovision Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Melodifestivalen icons</td>
+          <td>SVT/EBU/Getty Images</td>
+          <td><a href="Euro-imp.html">Eurovision Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Melodifestivalen 2025 venues</td>
+          <td>SVT/EBU/Getty Images</td>
+          <td><a href="Euro-imp.html">Eurovision Impacts</a></td>
+        </tr>
+        <tr>
+          <td>KAJ with Melfest trophy</td>
+          <td><a href="https://eurovisionworld.com/esc/sweden-kaj-wins-melodifestivalen-2025-with-bara-bada-bastu#google_vignette">Stina Sternjkvist/SVT</a></td>
+          <td><a href="Euro-imp.html">Eurovision Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Marcus & Martinus with Melfest trophy</td>
+          <td><a href="https://wiwibloggs.com/2024/03/09/marcus-martinus-win-melodifestivalen-2024-with-unforgettable/280538/">Stina Sternjkvist/SVT</a></td>
+          <td><a href="Euro-imp.html">Eurovision Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Max Martin</td>
+          <td><a href="https://en.wikipedia.org/wiki/Max_Martin">Wikipedia</a></td>
+          <td><a href="sw-imp.html">Songwriting Impacts</a></td>
+        </tr>
+        <tr>
+          <td>Group of songwriters</td>
+          <td><a href="https://eurotrippodcast.com/2023/09/19/hit-me-up-linnea-deb-declares-interest-in-writing-eurovision-song-for-uk/">SVT</a></td>
+          <td><a href="sw-imp.html">Songwriting Impacts</a></td>
+        </tr>
+      </table>
+      </div>
+      <hr>
+      <h2>Videos (in order of page ascending)</h2>
+      <p>- Melodifestivalen (2025) FINALEN: Kaj – Bara Badu Bastu. 8th March. <a href="https://www.youtube.com/watch?v=QIvtyzCYJDg&t=4s">Available here</a><br>
+        - Mozpiano2 (2011) ABBA Waterloo Melodifestivalen 1974 (Swedish Heats of Eurovision). 5th March. <a href="https://www.youtube.com/watch?v=pv6_UMum0gA&t=3s">Available here</a> <br>
+        - Club Love (2007) Roxette – It Must Have Been Love. 19th March. <a href="https://www.dailymotion.com/video/x1hi9b">Available here</a><br>
+        - Still Watching Netflix (2020) Husavik - My Home Town (Official Video) | Eurovision Song Contest: The Story of Fire Saga. 2nd July. <a href="https://www.youtube.com/watch?v=qjuphuG3ndw">Available here</a><br>
+        - ABBAtalk (2013) ABBA: Ring Ring - Live at Melodifestivalen 1973 #Eurovision #Rare #Unreleased.  26th March. <a href="https://www.youtube.com/watch?v=LFGLR39d7HQ">Available here</a><br>
+        - Universal Pictures UK (2018) Mamma Mia! Here We Go Again Final Trailer (Universal Pictures) HD. 8th May. <a href="https://www.youtube.com/watch?v=shS-jtFOuHw">Available here</a><br>
+        - Avicii (2021) Avicii Arena – For A Better Day. 19th May. <a href="https://www.facebook.com/watch/?v=465143984785497&t=0">Available here</a><br>
+        - ABC News (2019) Avicii’s last days and lasting legacy in music. 11th June. <a href="https://www.youtube.com/watch?v=UGVrDyP5tcI">Available here</a><br>
+        - Talks at Google (2020) Tim Bergling Foundation | Klas Bergling | Talks at Google. 24th June. <a href="https://www.youtube.com/watch?v=gd-uAAK4gMo">Available here</a><br>
+        - Melodifestivalen (2023) FINALEN: Loreen – Tattoo. 11th March. <a href="https://www.youtube.com/watch?v=h6x-TKgYM9k">Available here</a><br>
+        - Muso AI (2022) Max Martin On The Most Important Three Seconds In A Song. 12th April. <a href="https://www.youtube.com/watch?v=4OOBEE_24Ww">Available here</a>
+      </p>
+      <hr>
+      <h2>Research</h2>
+      <p>
+        - Johansson, O. (2010) ‘Beyond ABBA: The Globalization of Swedish Popular Music’ in Focus on Geography. PP.134-141. (53-4). https://doi.org/10.1111/j.1949-8535.2010.00016.x <a href=”https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1949-8535.2010.00016.x?casa_token=w5Yv6HTlLVoAAAAA:PyDNfBYoV-1kNBm8WnLgAAthoRQonOqmDOJDX0dOP54Wq8_OoMf9xsgk1HYKLFe8UZjr0NWLrFzgcg”> Available here</a><br>
+        - Musgrave, G. (2017) ‘Avicii: True Stories’ in Dancecult: Journal of Electronic Dance Music Culture. <a href=”https://dj.dancecult.net/index.php/dancecult/article/download/1191/1009?inline=1”>Available Here</a><br>
+        - Musgrave, G. (2022) ‘Lessons From the Loss of Avicii: Business Ethics, Responsibility, and Mental Well-being’. https://doi.org/10.4135/9781529794601 <a href=”https://sk.sagepub.com/cases/embed/lessons-loss-avicii-business-ethics-responsibility-mental-well-being”>Available here</a><br>
+        - van der Lee, P. (1997) ‘Latin American influences in Swedish popular music’, Popular Music and Society, 21(2), pp. 17–45. doi: 10.1080/03007769708591666. <a href=”https://www.tandfonline.com/doi/pdf/10.1080/03007769708591666?casa_token=8VhjmoXbjwkAAAAA:JOmPDAPb8dPrD6txEhLN-AXwGJDpLy90X-PtFjqHEvSAg6-8ieqSdOGbgNakREOGZnft6Pd-hZs”>Available here</a><br>
+        - Harvey, A. (2016). ‘Swedish and Swedish-American Music: From Jenny Lind to ABBA.’ Swedish-American Studies 67(1), 7-28. https://dx.doi.org/10.1353/swe.2016.a936232. <a href=”https://muse.jhu.edu/pub/23/article/936232”>Available here</a><br>
+        - Bjornberg, A.; Bossius, T. (2017) ‘Made in Sweden: Studies in Popular Music’. New York: Routledge. <a href=”https://books.google.co.uk/books?id=aiElDwAAQBAJ&printsec=copyright&redir_esc=y#v=onepage&q&f=false”>Available here</a><br>
+        - Frere-Jones, S. (2014) ‘The Sound of Sweden’. <a href=”https://www.newyorker.com/magazine/2014/12/01/sound-sweden”>Available here</a><br>
+        - @dolphin_dane (2024) ‘Melodifestivalen 2025 Songwriter Deep Dive’. Thread Reader.<a href=”https://threadreaderapp.com/thread/1861400818735366635.html”>Available here</a><br>
+        - Feeney, N. (2013) ‘Why is Sweden so Good at Pop Music’ in The Atlantic. <a href=”https://www.theatlantic.com/entertainment/archive/2013/10/why-is-sweden-so-good-at-pop-music/280945/”>Available here</a><br>
+        - Britt, B. (2014) ‘Icona Pop are Leading the Nordic Invasion’ on the Grammy Awards. <a href=”https://www.grammy.com/news/icona-pop-are-leading-the-nordic-invasion”>Available here</a><br>
+        - Baker, E. (2024) ’22 Swedish Musicians who made it big in America’ in HubPages. <a href=”https://discover.hubpages.com/entertainment/Swedish-Musicians-Who-Made-It-Big-in-America”>Available here</a>
+        </p>
+        <h3>Websites also used</h3>
+        <p>
+        - <a href=”https://sweden.se/culture/arts-design/the-swedish-music-miracle”>Sweden.se</a><br>
+        - <a href=”https://en.wikipedia.org/wiki/ABBA”>Wikipedia: ABBA</a><br>
+        - <a href=”https://en.wikipedia.org/wiki/Avicii”>Wikipedia: Avicii</a><br>
+        - <a href=”https://en.wikipedia.org/wiki/Sweden_in_the_Eurovision_Song_Contest”>Wikipedia: Avicii</a><br>
+        - <a href=”https://mellopedia.svt.se/index.php/Mellopedia”>Mellopedia</a><br>
+        - <a href=”https://www.musikmakarna.se/en/”>Musikmakarna</a><br>
+        - <a href=”https://www.swedishmusicalheritage.com/”>Swedish Musical Heritage</a><br>
+        - <a href=”Eurovision.tv”>Eurovision</a><br>
+        </p>
+        
+  </div>
+  <div class="f">
+    <hr>
+	<p>Student Number: 2644602c <br>
+	Submitted in fulfilment of MAD(B)</p>
+  <br>
+  
+  <!-- add in some navigation here -->
+  <br>
+    </div>
+  
+</div>
+
+
+<script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+    </script>
+</body>
+</html>

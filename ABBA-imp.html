@@ -161,6 +161,10 @@ body {
   .slide-img {
     display: none;
   }
+
+  .accordion {
+    display: none;
+}
 }
 
 @media screen and (max-width: 800px) {
@@ -199,7 +203,7 @@ body {
 </head>
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
+        <a href="hp-v2.html">Home</a>
         <a href="his-v2.html">Modern History</a>
         <div class="dropdown">
           <button class="dropbtn">Impacts
@@ -212,7 +216,7 @@ body {
             <a href="sw-imp.html">Songwriting</a>
           </div>
         </div> 
-        <a href="uc-v1.html">References</a>
+        <a href="references.html">References</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         <img src="images/logo.png" alt="Swedish Music Logo" class="nav-img" height="65">
       </div>
@@ -273,6 +277,17 @@ body {
   <p>After the first album written by Bjorn and Benny, the quartet began to record singles together and in 1971 began touring Swedish folk parks on a regular basis. Stig Andersson’s Polar Music record label, now more known for being ABBA’s label, wanted to make an international break, Andersson persuading Bjorn and Benny to record a song for Melfest. Their 1972 entry “Say it with a Song” came third and led them to enter on their own.</p>
   <p>A break was made in 1972 in Japan, when ‘She’s My Kind of Girl’ made the Japanese top 10. But it wasn’t until their singly “People Need Love” that they were credited as Bjorn & Benny, Agnetha & Anni-Frid.</p>
   <p>In 1973, Stig Anderson wanted the band to go once more to Melodifestivalen, with the song “Ring Ring” sung in Swedish. They finished 3rd in Melfest that year, however the song title would become the title of the band’s debut album. ‘Ring Ring’ went on to be a success across Europe and South Africa and led to the band officially being named as ABBA.</p>
+  <button class="accordion">The Top 5 Best-Selling ABBA Singles</button>
+    <div class="panel">
+      <ul class="best-selling-artists">
+        <li>1) Dancing Queen (1976)</li><br>
+        <li>2) Super Trouper (1980)</li><br>
+        <li>3) Knowing Me Knowing You (1977)</li><br>
+        <li>4) Take a Chance On Me (1978)</li><br>
+        <li>5) Fernando (1976)</li>
+       </ul> 
+    </div>
+    <br>
   <p>In 1974, the band re-entered Melfest, with the song ‘Waterloo’. Not only did they win Melfest, but they went on to win Eurovision, translating the song to English and as a result they charted across Europe, including the UK. The song even made it stateside, going to number 6 on the Billboard charts.</p>
   <p>After Eurovision, ABBA had made their big break. They started by going on tour across Scandinavia and Europe although not to instant success. Eventually through songs like ‘Mamma Mia’ and ‘I Do, I Do, I Do, I Do, I Do,’ they found their chance to reach worldwide stardom. Their first large-scale tour took place in January 1977, where they travelled across Europe and Australia. This was before Australia even watched Eurovision!</p>
   <p><i><a href="https://abbasite.com/articles/abba-on-stage/">If you want to know more about the different tour’s that ABBA went on, check out their official site here where it goes through all of their tours and what happened on them! </a></i></p>
@@ -285,6 +300,17 @@ body {
   <hr>
   <p>ABBA had reached international stardom, with America linking everything Swedish to ABBA (Johansson, 2010). The whole world was encapsulated by ABBA with albums and tours becoming successful across the globe. This all sadly came to an end in 1982 when they announced an indefinite break.</p>
   <p>That though is not the end of the ABBA story, although the release no new music, and had no public appearances until 2016 together, the band’s impact was still widespread. In 1992, ABBA Gold: Greatest Hits was released, now one of the best-selling albums worldwide and the second-highest-selling album in the UK alone.</p>
+  <button class="accordion">ABBA Tours</button>
+    <div class="panel">
+      <ul class="best-selling-artists">
+        <li>Swedish Folkpark Tour (1973)</li><br>
+        <li>European Tour (1974-1975)</li><br>
+        <li>European & Australian Tour (1977)</li><br>
+        <li>ABBA: The Tour (1979-1980)</li><br>
+        <li>ABBA Voyage (2022-20?)</li>
+       </ul> 
+    </div>
+    <br>
   <p>In 2005, their Eurovision winning song ‘Waterloo’ was voted as the best song in the competition entry. In 2008, for only the second time since 1986 the band reunited for the premiere of Mamma Mia! The Movie, once more surging the popularity of ABBA.</p>
   <p>The band reunited in 2016 for Mamma Mia! The Party, announcing at the same time the creation of a digital entertainment experience. This would become ABBA Voyage, staged in London and opening in a special arena in 2021. This came after the band recorded 2 new songs in 2018, and the album Voyage was released as a final goodbye from the band. In the final of the 2024 Eurovision Song Contest in Malmo, 50 years from their victory, a snippet from Voyage was shown on TV.</p>
   <hr>
@@ -402,7 +428,7 @@ body {
 	<p>Student Number: 2644602c <br>
 	Submitted in fulfilment of MAD(B)</p>
   <br>
-  
+  <a href="ABBA-imp.html" class="top">BACK TO TOP</a>
   <!-- add in some navigation here -->
   <br>
     </div>
@@ -436,6 +462,21 @@ function showSlides() {
       x.className = "topnav";
     }
   }
+
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
     </script>
 </body>
 </html>
