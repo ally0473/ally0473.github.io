@@ -20,6 +20,9 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hero-text button {

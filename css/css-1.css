@@ -29,6 +29,22 @@ h3 {
   
 }
 
+hr {
+  border: none; 
+  height: 2px; 
+  background-color: #FFD100; 
+  margin: 20px 0; 
+}
+
+body {
+  line-height: 1.8; /* Adjust the value as needed (e.g., 1.5, 2) */
+}
+
+/* If you want to target specific elements, you can do so like this */
+p, h1, h2, h3, li {
+  line-height: 1.8; /* Adjust the value as needed */
+}
+
 .large-break1 {
   margin-top: 550px;
 }
@@ -232,7 +248,15 @@ h3 {
     width: 100%;
   }
   .image-container img {
-    height: 750px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 200px) {
+  .image-container {
+    width: 100%;
+  }
+  .image-container img {
+    height: 75px;
   }
 }
 
@@ -313,4 +337,53 @@ h3 {
   .caption-box {
     display: none;
   }
+}
+
+.top {
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  place-self: end;
+}
+
+.accordion {
+  background-color: #006AA7;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+
+.accordion:after {
+  content: '\002B';
+  color: #006AA7;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
